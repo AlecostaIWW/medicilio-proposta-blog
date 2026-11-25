@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proposta gestione blog — Medicilio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#00305B;--primary:#1A8096;--primary-light:#D3EFEE;--primary-mid:#69C8C5;
+  --text:#00284D;--muted:#5b6f82;--border:#d9e6e8;--bg:#EEF9F9;--card:#ffffff;--warn:#FFF4CC;--warn-b:#E3C34A;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--navy:#8FD0DD;--primary:#69C8C5;--primary-light:#12383f;--primary-mid:#1A8096;--text:#E4F1F3;--muted:#9db3bd;--border:#244650;--bg:#0b1d22;--card:#10282f;--warn:#3a3210;--warn-b:#8a7424}
+}
+:root[data-theme="dark"]{--navy:#8FD0DD;--primary:#69C8C5;--primary-light:#12383f;--primary-mid:#1A8096;--text:#E4F1F3;--muted:#9db3bd;--border:#244650;--bg:#0b1d22;--card:#10282f;--warn:#3a3210;--warn-b:#8a7424}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Lato','Segoe UI',system-ui,sans-serif;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:40px 16px 64px}
+header{margin-bottom:28px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);font-weight:700}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.15;margin:8px 0 12px;color:var(--navy);font-weight:900}
+h2{font-size:22px;color:var(--navy);margin:0 0 6px;font-weight:900}
+.lead{font-size:17px;color:var(--muted);max-width:640px;margin:0}
+.meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14px;color:var(--muted)}
+.meta b{color:var(--text)}
+section{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:18px}
+section p{margin:6px 0 0}
+.steps{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:12px 14px;border:1px solid var(--border);border-radius:10px}
+.steps li::before{content:counter(s);width:32px;height:32px;border-radius:50%;background:var(--primary);color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .steps li::before{color:#06181c}}
+:root[data-theme="dark"] .steps li::before{color:#06181c}
+.steps strong{display:block;color:var(--navy)}
+.steps span{font-size:15px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.stat{background:var(--primary-light);border-radius:10px;padding:14px}
+.stat b{display:block;font-size:26px;color:var(--navy);font-weight:900;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin-top:14px;font-size:15px}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.n,th.n{text-align:right;white-space:nowrap}
+tfoot td{font-weight:900;border-bottom:0;color:var(--navy)}
+.ph{background:var(--warn);border:1px dashed var(--warn-b);border-radius:6px;padding:1px 8px;font-weight:700;white-space:nowrap}
+ul.list{margin:12px 0 0;padding-left:20px}
+ul.list li{margin:5px 0}
+.not{border-left:4px solid var(--primary-mid)}
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.tl div{border:1px solid var(--border);border-radius:10px;padding:12px}
+.tl b{display:block;color:var(--primary)}
+.tl span{font-size:14px;color:var(--muted)}
+.cal{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.cal span{background:var(--primary-light);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px}
+footer{font-size:13px;color:var(--muted);text-align:center;margin-top:24px}
+@media print{body{background:#fff}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Proposta · Dicembre 2026 – Marzo 2027</div>
+  <h1>Gestione completa del blog Medicilio</h1>
+  <p class="lead">Un unico referente per tutto il flusso editoriale: dal brief alla pubblicazione, con la revisione scientifica dentro il processo e non a valle.</p>
+  <div class="meta">
+    <span>Per: <b>Medicilio</b></span>
+    <span>Periodo: <b>dic 2026 – mar 2027 (4 mesi)</b></span>
+    <span>Volume: <b>8 articoli · in media 2 al mese</b></span>
+  </div>
+</header>
+
+<section>
+  <h2>Cosa ci siamo detti</h2>
+  <p>Medicilio vuole un blog che esca con regolarità, con contenuti affidabili dal punto di vista scientifico e coerenti con il posizionamento del brand. Serve qualcuno che gestisca l'intero flusso, senza che il team debba coordinare ogni passaggio.</p>
+  <div class="grid">
+    <div class="stat"><b>8</b><span>articoli nel periodo, su topic scelti con una keyword research iniziale</span></div>
+    <div class="stat"><b>~2</b><span>articoli al mese, in media</span></div>
+    <div class="stat"><b>2</b><span>livelli di revisione prima della pubblicazione</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Il flusso, in sei passaggi</h2>
+  <p>Si parte da una keyword research, da cui scegliamo insieme gli 8 topic. Da lì ogni articolo segue lo stesso percorso, per una media di due articoli al mese.</p>
+  <ol class="steps">
+    <li><div><strong>Keyword research iniziale e scelta degli 8 topic</strong><span>Una sola volta, all'avvio: analisi delle opportunità di ricerca e selezione condivisa degli 8 argomenti del periodo.</span></div></li>
+    <li><div><strong>Creazione dei brief</strong><span>Keyword, intento di ricerca, struttura, fonti e punti da trattare, a partire dalle opportunità SEO del sito.</span></div></li>
+    <li><div><strong>Tuning dell'agente AI di scrittura</strong><span>L'agente già presente all'interno di Medicilio viene regolato su ogni brief (tono, fonti, vincoli del settore) per ottenere una prima bozza solida.</span></div></li>
+    <li><div><strong>Revisione personale</strong><span>Controllo completo della bozza: accuratezza, stile, aderenza al brief, coerenza con gli altri contenuti del sito.</span></div></li>
+    <li><div><strong>Revisione con il direttore scientifico</strong><span>Verifica dei contenuti medici con il direttore scientifico e recepimento delle correzioni.</span></div></li>
+    <li><div><strong>Messa online</strong><span>Caricamento sul sito, formattazione, meta dati e link interni verso le pagine rilevanti (servizi, sedi, altri articoli).</span></div></li>
+  </ol>
+</section>
+
+
+<section>
+  <h2>Investimento</h2>
+  <p>Stima del lavoro per attività, su tutto il periodo: circa 4,75 ore per articolo, oltre all'avvio con la keyword research.</p>
+  <table>
+    <thead><tr><th>Attività</th><th class="n">Ore stimate</th></tr></thead>
+    <tbody>
+      <tr><td>Avvio e keyword research iniziale, con scelta degli 8 topic</td><td class="n">4</td></tr>
+      <tr><td>Brief (8 articoli)</td><td class="n">16</td></tr>
+      <tr><td>Tuning agente AI e produzione bozze</td><td class="n">7</td></tr>
+      <tr><td>Revisione personale e preparazione del report per il direttore scientifico</td><td class="n">4</td></tr>
+      <tr><td>Coordinamento con il direttore scientifico</td><td class="n">3</td></tr>
+      <tr><td>Upload, formattazione e link interni</td><td class="n">8</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td>Totale ore</td><td class="n">42 · 1.785 €</td></tr>
+      <tr><td>Ore già pagate da consumare (ultima fattura)</td><td class="n">− 8 · − 340 €</td></tr>
+      <tr><td>Totale da fatturare (dic 2026 – mar 2027)</td><td class="n">34 · 1.445 €</td></tr>
+      <tr><td>Equivalente mensile (media 2 articoli)</td><td class="n">361,25 € / mese</td></tr>
+    </tfoot>
+  </table>
+  <p style="font-size:14px;color:var(--muted);margin-top:12px">Dall'ultima fattura restano 8 ore già pagate e non ancora consumate: le scaliamo da questo preventivo.</p>
+</section>
+
+
+<footer>Proposta valida per il periodo dicembre 2026 – marzo 2027.</footer>
+</div>
+</body>
+</html>
